@@ -137,13 +137,7 @@
 
             <h3>1.1 المعلومات التي تقدمها لنا</h3>
             <ul>
-                <li><strong>معلومات الحساب (اختيارية):</strong> إذا اخترت إنشاء حساب، نقوم بجمع:
-                    <ul>
-                        <li>عنوان البريد الإلكتروني</li>
-                        <li>الاسم (اختياري)</li>
-                        <li>كلمة المرور (مشفرة، لا نخزنها بنص واضح)</li>
-                    </ul>
-                </li>
+                <li><strong>لا حاجة لإنشاء حساب:</strong> التطبيق <span class="highlight">لا يتطلب إنشاء حساب أو تسجيل دخول</span>. جميع بياناتك محفوظة محلياً على جهازك فقط.</li>
                 <li><strong>محتوى الأذكار والأدعية:</strong> جميع أذكارك وأدعيتك وإحصائياتك يتم تخزينها محلياً على جهازك بشكل مشفر باستخدام SQLCipher.</li>
             </ul>
 
@@ -164,8 +158,7 @@
             <p>نستخدم المعلومات التي نجمعها للأغراض التالية:</p>
             <ul>
                 <li><strong>توفير وظائف التطبيق:</strong> حفظ أذكارك، تتبع التقدم، عرض الإحصائيات</li>
-                <li><strong>المصادقة (اختياري):</strong> التحقق من هويتك إذا أنشأت حساباً</li>
-                <li><strong>معالجة الاشتراكات:</strong> إدارة اشتراكات النسخة المميزة عبر RevenueCat</li>
+                <li><strong>معالجة الاشتراكات:</strong> إدارة اشتراكات النسخة المميزة عبر RevenueCat (يستخدم معرف مجهول فقط)</li>
                 <li><strong>عرض الإعلانات (للمستخدمين المجانيين):</strong> عرض إعلانات ذات صلة عبر Google AdMob</li>
                 <li><strong>تحسين التطبيق:</strong> تحليل الاستخدام لتحسين الميزات والأداء</li>
                 <li><strong>إرسال الإشعارات:</strong> تذكيرك بأذكارك اليومية (يمكن تعطيلها)</li>
@@ -187,14 +180,32 @@
 
             <h2>4. تخزين البيانات والأمان</h2>
 
-            <h3>4.1 التخزين المحلي (معظم بياناتك)</h3>
+            <h3>4.1 التخزين المحلي الكامل</h3>
             <ul>
-                <li>جميع أذكارك وإحصائياتك مخزنة <span class="highlight">محلياً على جهازك</span></li>
+                <li>جميع أذكارك وإحصائياتك مخزنة <span class="highlight">محلياً على جهازك فقط</span></li>
                 <li>نستخدم <strong>تشفير SQLCipher</strong> مع PBKDF2 لحماية قاعدة البيانات المحلية</li>
-                <li>البيانات لا تغادر جهازك إلا إذا اخترت إنشاء حساب</li>
+                <li>البيانات لا ترفع إلى أي خادم - تبقى على جهازك بالكامل</li>
+                <li>لا يوجد سحابة أو مزامنة عبر الإنترنت</li>
             </ul>
 
-            <h3>4.2 الأمان</h3>
+            <h3>4.2 النسخ الاحتياطي التلقائي</h3>
+            <p>يتم نسخ بياناتك احتياطياً تلقائياً عبر نظام التشغيل الخاص بجهازك:</p>
+            <ul>
+                <li><strong>أندرويد:</strong> النسخ الاحتياطي التلقائي من جوجل (Google Auto Backup)</li>
+                <li><strong>iOS:</strong> النسخ الاحتياطي من iCloud (iCloud Backup)</li>
+            </ul>
+            <p>عند تثبيت التطبيق على جهاز جديد باستخدام نفس حساب جوجل أو Apple ID، سيتم استعادة بياناتك تلقائياً.</p>
+
+            <h3>4.3 التصدير والاستيراد اليدوي</h3>
+            <p>يتيح لك التطبيق تصدير بياناتك يدوياً:</p>
+            <ul>
+                <li>انتقل إلى: <strong>الإعدادات ← النسخ الاحتياطي والبيانات ← تصدير البيانات</strong></li>
+                <li>سيتم إنشاء ملف JSON يحتوي على جميع بياناتك</li>
+                <li>يمكنك مشاركة هذا الملف عبر البريد الإلكتروني أو خدمات التخزين السحابي</li>
+                <li>لاستيراد البيانات: <strong>الإعدادات ← النسخ الاحتياطي والبيانات ← استيراد البيانات</strong></li>
+            </ul>
+
+            <h3>4.4 الأمان</h3>
             <p>نتخذ تدابير أمنية معقولة لحماية معلوماتك، بما في ذلك:</p>
             <ul>
                 <li>تشفير البيانات في حالة السكون (SQLCipher)</li>
@@ -206,16 +217,18 @@
             <h2>5. حقوقك</h2>
             <p>لديك الحق في:</p>
             <ul>
-                <li><strong>الوصول:</strong> طلب نسخة من بياناتك الشخصية</li>
-                <li><strong>التصحيح:</strong> تحديث معلوماتك الشخصية غير الدقيقة</li>
-                <li><strong>الحذف:</strong> حذف حسابك وجميع البيانات المرتبطة به</li>
+                <li><strong>الوصول:</strong> تصدير نسخة من بياناتك في أي وقت</li>
+                <li><strong>التصحيح:</strong> تحديث وتعديل بياناتك داخل التطبيق</li>
+                <li><strong>الحذف:</strong> حذف التطبيق لإزالة جميع البيانات من جهازك</li>
                 <li><strong>الإلغاء:</strong> إلغاء اشتراكك في أي وقت عبر متجر التطبيقات</li>
                 <li><strong>تعطيل الإعلانات المخصصة:</strong> إدارة تفضيلات الإعلانات في إعدادات جهازك</li>
+                <li><strong>التحكم الكامل:</strong> بياناتك ملكك، محفوظة محلياً على جهازك</li>
             </ul>
 
             <h3>كيفية ممارسة حقوقك:</h3>
             <ul>
-                <li><strong>حذف الحساب:</strong> الإعدادات → الحساب → حذف الحساب</li>
+                <li><strong>تصدير البيانات:</strong> الإعدادات → النسخ الاحتياطي والبيانات → تصدير البيانات</li>
+                <li><strong>حذف البيانات:</strong> إلغاء تثبيت التطبيق من جهازك</li>
                 <li><strong>إلغاء الاشتراك:</strong> Google Play Store أو Apple App Store → الاشتراكات</li>
                 <li><strong>تعطيل الإشعارات:</strong> الإعدادات → إعدادات الإشعارات</li>
                 <li><strong>لأي طلبات أخرى:</strong> راسلنا على saeed201@gmail.com</li>
@@ -281,13 +294,7 @@
 
             <h3>1.1 Information You Provide</h3>
             <ul>
-                <li><strong>Account Information (Optional):</strong> If you choose to create an account, we collect:
-                    <ul>
-                        <li>Email address</li>
-                        <li>Name (optional)</li>
-                        <li>Password (encrypted, never stored in plain text)</li>
-                    </ul>
-                </li>
+                <li><strong>No Account Needed:</strong> The app <span class="highlight">does not require creating an account or logging in</span>. All your data is stored locally on your device only.</li>
                 <li><strong>Dhikr & Supplication Content:</strong> All your dhikr, supplications, and statistics are stored locally on your device, encrypted using SQLCipher.</li>
             </ul>
 
@@ -308,8 +315,7 @@
             <p>We use the information we collect for the following purposes:</p>
             <ul>
                 <li><strong>Provide App Functionality:</strong> Save your dhikr, track progress, display statistics</li>
-                <li><strong>Authentication (Optional):</strong> Verify your identity if you create an account</li>
-                <li><strong>Process Subscriptions:</strong> Manage Pro subscriptions via RevenueCat</li>
+                <li><strong>Process Subscriptions:</strong> Manage Pro subscriptions via RevenueCat (uses anonymous ID only)</li>
                 <li><strong>Display Ads (Free Users):</strong> Show relevant ads via Google AdMob</li>
                 <li><strong>Improve the App:</strong> Analyze usage to improve features and performance</li>
                 <li><strong>Send Notifications:</strong> Remind you of daily dhikr (can be disabled)</li>
@@ -331,14 +337,32 @@
 
             <h2>4. Data Storage & Security</h2>
 
-            <h3>4.1 Local Storage (Most of Your Data)</h3>
+            <h3>4.1 Fully Local Storage</h3>
             <ul>
-                <li>All your dhikr and statistics are stored <span class="highlight">locally on your device</span></li>
+                <li>All your dhikr and statistics are stored <span class="highlight">locally on your device only</span></li>
                 <li>We use <strong>SQLCipher encryption</strong> with PBKDF2 to protect the local database</li>
-                <li>Data never leaves your device unless you choose to create an account</li>
+                <li>Your data is not uploaded to any server - it stays on your device completely</li>
+                <li>No cloud or online synchronization</li>
             </ul>
 
-            <h3>4.2 Security</h3>
+            <h3>4.2 Automatic Backup</h3>
+            <p>Your data is automatically backed up via your device's operating system:</p>
+            <ul>
+                <li><strong>Android:</strong> Google Auto Backup</li>
+                <li><strong>iOS:</strong> iCloud Backup</li>
+            </ul>
+            <p>When you install the app on a new device using the same Google account or Apple ID, your data will be automatically restored.</p>
+
+            <h3>4.3 Manual Export & Import</h3>
+            <p>The app allows you to manually export your data:</p>
+            <ul>
+                <li>Go to: <strong>Settings → Backup & Data → Export Data</strong></li>
+                <li>A JSON file containing all your data will be created</li>
+                <li>You can share this file via email or cloud storage services</li>
+                <li>To import data: <strong>Settings → Backup & Data → Import Data</strong></li>
+            </ul>
+
+            <h3>4.4 Security</h3>
             <p>We implement reasonable security measures to protect your information, including:</p>
             <ul>
                 <li>Data encryption at rest (SQLCipher)</li>
@@ -350,16 +374,18 @@
             <h2>5. Your Rights</h2>
             <p>You have the right to:</p>
             <ul>
-                <li><strong>Access:</strong> Request a copy of your personal data</li>
-                <li><strong>Rectification:</strong> Update inaccurate personal information</li>
-                <li><strong>Deletion:</strong> Delete your account and all associated data</li>
+                <li><strong>Access:</strong> Export a copy of your data anytime</li>
+                <li><strong>Rectification:</strong> Update and modify your data within the app</li>
+                <li><strong>Deletion:</strong> Uninstall the app to remove all data from your device</li>
                 <li><strong>Cancellation:</strong> Cancel your subscription anytime via the app store</li>
                 <li><strong>Opt-Out:</strong> Disable personalized ads in your device settings</li>
+                <li><strong>Full Control:</strong> Your data is yours, stored locally on your device</li>
             </ul>
 
             <h3>How to Exercise Your Rights:</h3>
             <ul>
-                <li><strong>Delete Account:</strong> Settings → Account → Delete Account</li>
+                <li><strong>Export Data:</strong> Settings → Backup & Data → Export Data</li>
+                <li><strong>Delete Data:</strong> Uninstall the app from your device</li>
                 <li><strong>Cancel Subscription:</strong> Google Play Store or Apple App Store → Subscriptions</li>
                 <li><strong>Disable Notifications:</strong> Settings → Notification Settings</li>
                 <li><strong>Other Requests:</strong> Email us at saeed201@gmail.com</li>
