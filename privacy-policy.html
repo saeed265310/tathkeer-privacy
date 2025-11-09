@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سياسة الخصوصية - تذكير | Privacy Policy - Tathkeer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2e7d32;
+            margin-bottom: 10px;
+            font-size: 2em;
+            text-align: center;
+        }
+        h2 {
+            color: #2e7d32;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            border-bottom: 2px solid #2e7d32;
+            padding-bottom: 10px;
+        }
+        h3 {
+            color: #388e3c;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        p, li {
+            margin-bottom: 12px;
+        }
+        ul {
+            margin-right: 30px;
+            margin-bottom: 15px;
+        }
+        .effective-date {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+        .contact-info {
+            background: #e8f5e9;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+        .language-toggle {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .language-toggle button {
+            background: #2e7d32;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .language-toggle button:hover {
+            background: #1b5e20;
+        }
+        .language-toggle button.active {
+            background: #1b5e20;
+        }
+        .lang-ar { display: block; }
+        .lang-en { display: none; }
+        body[data-lang="en"] .lang-ar { display: none; }
+        body[data-lang="en"] .lang-en { display: block; }
+        body[data-lang="en"] { direction: ltr; }
+        .highlight {
+            background: #fff9c4;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+        a {
+            color: #2e7d32;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body data-lang="ar">
+    <div class="container">
+        <div class="language-toggle">
+            <button onclick="setLanguage('ar')" class="active" id="btn-ar">العربية</button>
+            <button onclick="setLanguage('en')" id="btn-en">English</button>
+        </div>
+
+        <!-- Arabic Version -->
+        <div class="lang-ar">
+            <h1>سياسة الخصوصية</h1>
+            <h2 style="text-align: center; color: #666; font-size: 1.2em; margin-top: 5px;">تطبيق تذكير - تتبع الأذكار والأدعية</h2>
+            <p class="effective-date">تاريخ السريان: 9 يناير 2025 | آخر تحديث: 9 يناير 2025</p>
+
+            <h2>مقدمة</h2>
+            <p>
+                مرحباً بك في تطبيق <strong>تذكير</strong>. نحن ملتزمون بحماية خصوصيتك واحترام بياناتك الشخصية.
+                تم تصميم هذا التطبيق بمبدأ <span class="highlight">"المحلي أولاً"</span>، مما يعني أن معظم بياناتك تبقى على جهازك ومشفرة بالكامل.
+            </p>
+            <p>
+                توضح سياسة الخصوصية هذه كيفية جمع واستخدام وحماية معلوماتك عند استخدام تطبيق تذكير.
+            </p>
+
+            <h2>1. المعلومات التي نجمعها</h2>
+
+            <h3>1.1 المعلومات التي تقدمها لنا</h3>
+            <ul>
+                <li><strong>معلومات الحساب (اختيارية):</strong> إذا اخترت إنشاء حساب، نقوم بجمع:
+                    <ul>
+                        <li>عنوان البريد الإلكتروني</li>
+                        <li>الاسم (اختياري)</li>
+                        <li>كلمة المرور (مشفرة، لا نخزنها بنص واضح)</li>
+                    </ul>
+                </li>
+                <li><strong>محتوى الأذكار والأدعية:</strong> جميع أذكارك وأدعيتك وإحصائياتك يتم تخزينها محلياً على جهازك بشكل مشفر باستخدام SQLCipher.</li>
+            </ul>
+
+            <h3>1.2 المعلومات التي نجمعها تلقائياً</h3>
+            <ul>
+                <li><strong>معلومات الجهاز:</strong> نوع الجهاز، نظام التشغيل، إصدار التطبيق</li>
+                <li><strong>بيانات الاستخدام:</strong> التفاعل مع التطبيق، الأذكار المستخدمة، مدة الاستخدام</li>
+                <li><strong>بيانات التحليلات (للمستخدمين المجانيين):</strong> يتم جمع بيانات تحليلية مجهولة المصدر عبر Google AdMob</li>
+            </ul>
+
+            <h3>1.3 البيانات البيومترية</h3>
+            <p>
+                إذا فعّلت قفل التطبيق البيومتري، يستخدم التطبيق بصمة الإصبع أو التعرف على الوجه من جهازك.
+                <span class="highlight">نحن لا نخزن أو نصل إلى هذه البيانات البيومترية</span> - تتم المعالجة بالكامل من قبل نظام تشغيل جهازك.
+            </p>
+
+            <h2>2. كيف نستخدم معلوماتك</h2>
+            <p>نستخدم المعلومات التي نجمعها للأغراض التالية:</p>
+            <ul>
+                <li><strong>توفير وظائف التطبيق:</strong> حفظ أذكارك، تتبع التقدم، عرض الإحصائيات</li>
+                <li><strong>المصادقة (اختياري):</strong> التحقق من هويتك إذا أنشأت حساباً</li>
+                <li><strong>معالجة الاشتراكات:</strong> إدارة اشتراكات النسخة المميزة عبر RevenueCat</li>
+                <li><strong>عرض الإعلانات (للمستخدمين المجانيين):</strong> عرض إعلانات ذات صلة عبر Google AdMob</li>
+                <li><strong>تحسين التطبيق:</strong> تحليل الاستخدام لتحسين الميزات والأداء</li>
+                <li><strong>إرسال الإشعارات:</strong> تذكيرك بأذكارك اليومية (يمكن تعطيلها)</li>
+                <li><strong>الأمان:</strong> حماية التطبيق والمستخدمين من الاحتيال وسوء الاستخدام</li>
+            </ul>
+
+            <h2>3. مشاركة المعلومات</h2>
+            <p>نحن <span class="highlight">لا نبيع بياناتك الشخصية</span> لأطراف ثالثة. قد نشارك معلوماتك مع:</p>
+
+            <h3>3.1 مزودي الخدمات</h3>
+            <ul>
+                <li><strong>RevenueCat:</strong> لمعالجة الاشتراكات المدفوعة وإدارة عمليات الشراء داخل التطبيق</li>
+                <li><strong>Google AdMob:</strong> لعرض الإعلانات وجمع بيانات التحليلات (للمستخدمين المجانيين فقط)</li>
+                <li><strong>Google Play Store / Apple App Store:</strong> لمعالجة المدفوعات والاشتراكات</li>
+            </ul>
+
+            <h3>3.2 المتطلبات القانونية</h3>
+            <p>قد نكشف عن معلوماتك إذا كان ذلك مطلوباً بموجب القانون أو استجابة لأوامر قانونية صالحة.</p>
+
+            <h2>4. تخزين البيانات والأمان</h2>
+
+            <h3>4.1 التخزين المحلي (معظم بياناتك)</h3>
+            <ul>
+                <li>جميع أذكارك وإحصائياتك مخزنة <span class="highlight">محلياً على جهازك</span></li>
+                <li>نستخدم <strong>تشفير SQLCipher</strong> مع PBKDF2 لحماية قاعدة البيانات المحلية</li>
+                <li>البيانات لا تغادر جهازك إلا إذا اخترت إنشاء حساب</li>
+            </ul>
+
+            <h3>4.2 الأمان</h3>
+            <p>نتخذ تدابير أمنية معقولة لحماية معلوماتك، بما في ذلك:</p>
+            <ul>
+                <li>تشفير البيانات في حالة السكون (SQLCipher)</li>
+                <li>تشفير كلمات المرور (bcrypt/PBKDF2)</li>
+                <li>اتصالات آمنة (HTTPS/TLS)</li>
+                <li>عدم تخزين معلومات بطاقة الائتمان (تتم معالجتها بواسطة Google/Apple)</li>
+            </ul>
+
+            <h2>5. حقوقك</h2>
+            <p>لديك الحق في:</p>
+            <ul>
+                <li><strong>الوصول:</strong> طلب نسخة من بياناتك الشخصية</li>
+                <li><strong>التصحيح:</strong> تحديث معلوماتك الشخصية غير الدقيقة</li>
+                <li><strong>الحذف:</strong> حذف حسابك وجميع البيانات المرتبطة به</li>
+                <li><strong>الإلغاء:</strong> إلغاء اشتراكك في أي وقت عبر متجر التطبيقات</li>
+                <li><strong>تعطيل الإعلانات المخصصة:</strong> إدارة تفضيلات الإعلانات في إعدادات جهازك</li>
+            </ul>
+
+            <h3>كيفية ممارسة حقوقك:</h3>
+            <ul>
+                <li><strong>حذف الحساب:</strong> الإعدادات → الحساب → حذف الحساب</li>
+                <li><strong>إلغاء الاشتراك:</strong> Google Play Store أو Apple App Store → الاشتراكات</li>
+                <li><strong>تعطيل الإشعارات:</strong> الإعدادات → إعدادات الإشعارات</li>
+                <li><strong>لأي طلبات أخرى:</strong> راسلنا على support@tathkeer.app</li>
+            </ul>
+
+            <h2>6. خدمات الطرف الثالث</h2>
+            <p>يستخدم التطبيق الخدمات التالية، التي لها سياسات خصوصية خاصة بها:</p>
+            <ul>
+                <li><strong>RevenueCat:</strong> <a href="https://www.revenuecat.com/privacy" target="_blank">سياسة خصوصية RevenueCat</a></li>
+                <li><strong>Google AdMob:</strong> <a href="https://policies.google.com/privacy" target="_blank">سياسة خصوصية Google</a></li>
+                <li><strong>Google Play Services:</strong> <a href="https://policies.google.com/privacy" target="_blank">سياسة خصوصية Google</a></li>
+            </ul>
+
+            <h2>7. خصوصية الأطفال</h2>
+            <p>
+                تطبيق تذكير مناسب لجميع الأعمار. نحن لا نجمع عن قصد معلومات شخصية من الأطفال دون سن 13 عاماً.
+                إذا كنت والداً أو وصياً وتعتقد أن طفلك قدم لنا معلومات شخصية، يرجى الاتصال بنا لحذفها.
+            </p>
+
+            <h2>8. التغييرات على سياسة الخصوصية</h2>
+            <p>
+                قد نقوم بتحديث سياسة الخصوصية هذه من وقت لآخر. سنخطرك بأي تغييرات من خلال:
+            </p>
+            <ul>
+                <li>نشر السياسة الجديدة على هذه الصفحة</li>
+                <li>تحديث تاريخ "آخر تحديث" في الأعلى</li>
+                <li>إرسال إشعار داخل التطبيق للتغييرات الجوهرية</li>
+            </ul>
+
+            <h2>9. موافقتك</h2>
+            <p>
+                باستخدام تطبيق تذكير، فإنك توافق على شروط سياسة الخصوصية هذه.
+                إذا لم توافق على هذه الشروط، يرجى عدم استخدام التطبيق.
+            </p>
+
+            <div class="contact-info">
+                <h2 style="margin-top: 0;">تواصل معنا</h2>
+                <p>إذا كان لديك أي أسئلة أو استفسارات حول سياسة الخصوصية هذه، يرجى الاتصال بنا:</p>
+                <ul style="list-style: none; margin-right: 0;">
+                    <li><strong>البريد الإلكتروني:</strong> support@tathkeer.app</li>
+                    <li><strong>التطبيق:</strong> تذكير - تتبع الأذكار والأدعية</li>
+                    <li><strong>المنصات:</strong> Android, iOS</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- English Version -->
+        <div class="lang-en">
+            <h1>Privacy Policy</h1>
+            <h2 style="text-align: center; color: #666; font-size: 1.2em; margin-top: 5px;">Tathkeer App - Muslim Dhikr & Supplication Tracker</h2>
+            <p class="effective-date">Effective Date: January 9, 2025 | Last Updated: January 9, 2025</p>
+
+            <h2>Introduction</h2>
+            <p>
+                Welcome to <strong>Tathkeer</strong>. We are committed to protecting your privacy and respecting your personal data.
+                This app is designed with a <span class="highlight">"local-first"</span> principle, meaning most of your data stays on your device and is fully encrypted.
+            </p>
+            <p>
+                This Privacy Policy explains how we collect, use, and protect your information when you use the Tathkeer app.
+            </p>
+
+            <h2>1. Information We Collect</h2>
+
+            <h3>1.1 Information You Provide</h3>
+            <ul>
+                <li><strong>Account Information (Optional):</strong> If you choose to create an account, we collect:
+                    <ul>
+                        <li>Email address</li>
+                        <li>Name (optional)</li>
+                        <li>Password (encrypted, never stored in plain text)</li>
+                    </ul>
+                </li>
+                <li><strong>Dhikr & Supplication Content:</strong> All your dhikr, supplications, and statistics are stored locally on your device, encrypted using SQLCipher.</li>
+            </ul>
+
+            <h3>1.2 Information Collected Automatically</h3>
+            <ul>
+                <li><strong>Device Information:</strong> Device type, operating system, app version</li>
+                <li><strong>Usage Data:</strong> App interactions, dhikr used, session duration</li>
+                <li><strong>Analytics Data (Free Users):</strong> Anonymous analytics collected via Google AdMob</li>
+            </ul>
+
+            <h3>1.3 Biometric Data</h3>
+            <p>
+                If you enable biometric app lock, the app uses your device's fingerprint or face recognition.
+                <span class="highlight">We do not store or access this biometric data</span> - processing is entirely handled by your device's operating system.
+            </p>
+
+            <h2>2. How We Use Your Information</h2>
+            <p>We use the information we collect for the following purposes:</p>
+            <ul>
+                <li><strong>Provide App Functionality:</strong> Save your dhikr, track progress, display statistics</li>
+                <li><strong>Authentication (Optional):</strong> Verify your identity if you create an account</li>
+                <li><strong>Process Subscriptions:</strong> Manage Pro subscriptions via RevenueCat</li>
+                <li><strong>Display Ads (Free Users):</strong> Show relevant ads via Google AdMob</li>
+                <li><strong>Improve the App:</strong> Analyze usage to improve features and performance</li>
+                <li><strong>Send Notifications:</strong> Remind you of daily dhikr (can be disabled)</li>
+                <li><strong>Security:</strong> Protect the app and users from fraud and abuse</li>
+            </ul>
+
+            <h2>3. Information Sharing</h2>
+            <p>We <span class="highlight">do not sell your personal data</span> to third parties. We may share your information with:</p>
+
+            <h3>3.1 Service Providers</h3>
+            <ul>
+                <li><strong>RevenueCat:</strong> To process paid subscriptions and manage in-app purchases</li>
+                <li><strong>Google AdMob:</strong> To display ads and collect analytics (free users only)</li>
+                <li><strong>Google Play Store / Apple App Store:</strong> To process payments and subscriptions</li>
+            </ul>
+
+            <h3>3.2 Legal Requirements</h3>
+            <p>We may disclose your information if required by law or in response to valid legal requests.</p>
+
+            <h2>4. Data Storage & Security</h2>
+
+            <h3>4.1 Local Storage (Most of Your Data)</h3>
+            <ul>
+                <li>All your dhikr and statistics are stored <span class="highlight">locally on your device</span></li>
+                <li>We use <strong>SQLCipher encryption</strong> with PBKDF2 to protect the local database</li>
+                <li>Data never leaves your device unless you choose to create an account</li>
+            </ul>
+
+            <h3>4.2 Security</h3>
+            <p>We implement reasonable security measures to protect your information, including:</p>
+            <ul>
+                <li>Data encryption at rest (SQLCipher)</li>
+                <li>Password hashing (bcrypt/PBKDF2)</li>
+                <li>Secure connections (HTTPS/TLS)</li>
+                <li>No credit card storage (processed by Google/Apple)</li>
+            </ul>
+
+            <h2>5. Your Rights</h2>
+            <p>You have the right to:</p>
+            <ul>
+                <li><strong>Access:</strong> Request a copy of your personal data</li>
+                <li><strong>Rectification:</strong> Update inaccurate personal information</li>
+                <li><strong>Deletion:</strong> Delete your account and all associated data</li>
+                <li><strong>Cancellation:</strong> Cancel your subscription anytime via the app store</li>
+                <li><strong>Opt-Out:</strong> Disable personalized ads in your device settings</li>
+            </ul>
+
+            <h3>How to Exercise Your Rights:</h3>
+            <ul>
+                <li><strong>Delete Account:</strong> Settings → Account → Delete Account</li>
+                <li><strong>Cancel Subscription:</strong> Google Play Store or Apple App Store → Subscriptions</li>
+                <li><strong>Disable Notifications:</strong> Settings → Notification Settings</li>
+                <li><strong>Other Requests:</strong> Email us at support@tathkeer.app</li>
+            </ul>
+
+            <h2>6. Third-Party Services</h2>
+            <p>The app uses the following services, which have their own privacy policies:</p>
+            <ul>
+                <li><strong>RevenueCat:</strong> <a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat Privacy Policy</a></li>
+                <li><strong>Google AdMob:</strong> <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
+                <li><strong>Google Play Services:</strong> <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
+            </ul>
+
+            <h2>7. Children's Privacy</h2>
+            <p>
+                Tathkeer app is suitable for all ages. We do not knowingly collect personal information from children under 13.
+                If you are a parent or guardian and believe your child has provided us with personal information, please contact us to have it deleted.
+            </p>
+
+            <h2>8. Changes to Privacy Policy</h2>
+            <p>
+                We may update this Privacy Policy from time to time. We will notify you of any changes by:
+            </p>
+            <ul>
+                <li>Posting the new policy on this page</li>
+                <li>Updating the "Last Updated" date at the top</li>
+                <li>Sending an in-app notification for material changes</li>
+            </ul>
+
+            <h2>9. Your Consent</h2>
+            <p>
+                By using the Tathkeer app, you consent to the terms of this Privacy Policy.
+                If you do not agree with these terms, please do not use the app.
+            </p>
+
+            <div class="contact-info">
+                <h2 style="margin-top: 0;">Contact Us</h2>
+                <p>If you have any questions or concerns about this Privacy Policy, please contact us:</p>
+                <ul style="list-style: none; margin-left: 0;">
+                    <li><strong>Email:</strong> support@tathkeer.app</li>
+                    <li><strong>App:</strong> Tathkeer - Muslim Dhikr & Supplication Tracker</li>
+                    <li><strong>Platforms:</strong> Android, iOS</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function setLanguage(lang) {
+            document.body.setAttribute('data-lang', lang);
+            document.getElementById('btn-ar').classList.toggle('active', lang === 'ar');
+            document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+            localStorage.setItem('preferredLanguage', lang);
+        }
+
+        // Load saved language preference
+        const savedLang = localStorage.getItem('preferredLanguage') || 'ar';
+        setLanguage(savedLang);
+    </script>
+</body>
+</html>
