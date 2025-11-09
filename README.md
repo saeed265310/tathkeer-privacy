@@ -47,7 +47,7 @@ Tathkeer is built with **privacy-first** principles:
 ## 📧 Contact
 
 For questions about this privacy policy or the Tathkeer app:
-- **Email:** support@tathkeer.app
+- **Email:** saeed201@gmail.com
 - **Privacy Policy:** [View Online](https://saeed265310.github.io/tathkeer-privacy/privacy-policy.html)
 
 ## 📝 Updates
