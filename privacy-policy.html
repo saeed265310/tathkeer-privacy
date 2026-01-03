@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
             padding: 0;
             box-sizing: border-box;
         }
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.8;
@@ -17,20 +19,23 @@
             background: #f5f5f5;
             padding: 20px;
         }
+
         .container {
             max-width: 900px;
             margin: 0 auto;
             background: white;
             padding: 40px;
             border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
+
         h1 {
             color: #2e7d32;
             margin-bottom: 10px;
             font-size: 2em;
             text-align: center;
         }
+
         h2 {
             color: #2e7d32;
             margin-top: 30px;
@@ -39,35 +44,43 @@
             border-bottom: 2px solid #2e7d32;
             padding-bottom: 10px;
         }
+
         h3 {
             color: #388e3c;
             margin-top: 20px;
             margin-bottom: 10px;
             font-size: 1.2em;
         }
-        p, li {
+
+        p,
+        li {
             margin-bottom: 12px;
         }
+
         ul {
             margin-right: 30px;
             margin-bottom: 15px;
         }
+
         .effective-date {
             text-align: center;
             color: #666;
             margin-bottom: 30px;
             font-style: italic;
         }
+
         .contact-info {
             background: #e8f5e9;
             padding: 20px;
             border-radius: 5px;
             margin-top: 30px;
         }
+
         .language-toggle {
             text-align: center;
             margin-bottom: 30px;
         }
+
         .language-toggle button {
             background: #2e7d32;
             color: white;
@@ -78,39 +91,62 @@
             cursor: pointer;
             font-size: 14px;
         }
+
         .language-toggle button:hover {
             background: #1b5e20;
         }
+
         .language-toggle button.active {
             background: #1b5e20;
         }
-        .lang-ar { display: block; }
-        .lang-en { display: none; }
-        body[data-lang="en"] .lang-ar { display: none; }
-        body[data-lang="en"] .lang-en { display: block; }
-        body[data-lang="en"] { direction: ltr; }
+
+        .lang-ar {
+            display: block;
+        }
+
+        .lang-en {
+            display: none;
+        }
+
+        body[data-lang="en"] .lang-ar {
+            display: none;
+        }
+
+        body[data-lang="en"] .lang-en {
+            display: block;
+        }
+
+        body[data-lang="en"] {
+            direction: ltr;
+        }
+
         .highlight {
             background: #fff9c4;
             padding: 2px 5px;
             border-radius: 3px;
         }
+
         a {
             color: #2e7d32;
             text-decoration: none;
         }
+
         a:hover {
             text-decoration: underline;
         }
+
         @media (max-width: 600px) {
             .container {
                 padding: 20px;
             }
+
             h1 {
                 font-size: 1.5em;
             }
         }
     </style>
 </head>
+
 <body data-lang="ar">
     <div class="container">
         <div class="language-toggle">
@@ -121,13 +157,15 @@
         <!-- Arabic Version -->
         <div class="lang-ar">
             <h1>سياسة الخصوصية</h1>
-            <h2 style="text-align: center; color: #666; font-size: 1.2em; margin-top: 5px;">تطبيق تذكير - تتبع الأذكار والأدعية</h2>
-            <p class="effective-date">تاريخ السريان: 9 يناير 2025 | آخر تحديث: 9 يناير 2025</p>
+            <h2 style="text-align: center; color: #666; font-size: 1.2em; margin-top: 5px;">تطبيق تذكير - تتبع الأذكار
+                والأدعية</h2>
+            <p class="effective-date">تاريخ السريان: 9 يناير 2025 | آخر تحديث: 3 يناير 2026</p>
 
             <h2>مقدمة</h2>
             <p>
                 مرحباً بك في تطبيق <strong>تذكير</strong>. نحن ملتزمون بحماية خصوصيتك واحترام بياناتك الشخصية.
-                تم تصميم هذا التطبيق بمبدأ <span class="highlight">"المحلي أولاً"</span>، مما يعني أن معظم بياناتك تبقى على جهازك ومشفرة بالكامل.
+                تم تصميم هذا التطبيق بمبدأ <span class="highlight">"المحلي أولاً"</span>، مما يعني أن معظم بياناتك تبقى
+                على جهازك ومشفرة بالكامل.
             </p>
             <p>
                 توضح سياسة الخصوصية هذه كيفية جمع واستخدام وحماية معلوماتك عند استخدام تطبيق تذكير.
@@ -137,31 +175,41 @@
 
             <h3>1.1 المعلومات التي تقدمها لنا</h3>
             <ul>
-                <li><strong>لا حاجة لإنشاء حساب:</strong> التطبيق لا يتطلب إنشاء حساب أو تسجيل الدخول. جميع بياناتك مخزنة محلياً على جهازك فقط.</li>
-                <li><strong>محتوى الأذكار والأدعية:</strong> جميع أذكارك وأدعيتك وإحصائياتك يتم تخزينها محلياً على جهازك بشكل مشفر باستخدام SQLCipher.</li>
+                <li><strong>لا حاجة لإنشاء حساب:</strong> التطبيق لا يتطلب إنشاء حساب أو تسجيل الدخول. جميع بياناتك
+                    مخزنة محلياً على جهازك فقط.</li>
+                <li><strong>محتوى الأذكار والأدعية:</strong> جميع أذكارك وأدعيتك وإحصائياتك يتم تخزينها محلياً على جهازك
+                    بشكل مشفر باستخدام SQLCipher.</li>
             </ul>
 
             <h3>1.2 المعلومات التي نجمعها تلقائياً</h3>
             <ul>
                 <li><strong>معلومات الجهاز:</strong> نوع الجهاز، نظام التشغيل، إصدار التطبيق</li>
                 <li><strong>بيانات الاستخدام:</strong> التفاعل مع التطبيق، الأذكار المستخدمة، مدة الاستخدام</li>
-                <li><strong>بيانات التحليلات (للمستخدمين المجانيين):</strong> يتم جمع بيانات تحليلية مجهولة المصدر عبر Google AdMob</li>
+                <li><strong>بيانات التحليلات:</strong> يتم جمع بيانات تحليلية مجهولة المصدر عبر <strong>Firebase
+                        Analytics</strong> و Google AdMob</li>
+                <li><strong>بيانات الموقع:</strong> عند السماح بذلك، نجمع موقعك لحساب أوقات الصلاة بدقة. <span
+                        class="highlight">الموقع يُستخدم محلياً فقط ولا يُرسل لخوادمنا.</span></li>
             </ul>
 
             <h3>1.3 البيانات البيومترية</h3>
             <p>
                 إذا فعّلت قفل التطبيق البيومتري، يستخدم التطبيق بصمة الإصبع أو التعرف على الوجه من جهازك.
-                <span class="highlight">نحن لا نخزن أو نصل إلى هذه البيانات البيومترية</span> - تتم المعالجة بالكامل من قبل نظام تشغيل جهازك.
+                <span class="highlight">نحن لا نخزن أو نصل إلى هذه البيانات البيومترية</span> - تتم المعالجة بالكامل من
+                قبل نظام تشغيل جهازك.
             </p>
 
             <h2>2. كيف نستخدم معلوماتك</h2>
             <p>نستخدم المعلومات التي نجمعها للأغراض التالية:</p>
             <ul>
                 <li><strong>توفير وظائف التطبيق:</strong> حفظ أذكارك، تتبع التقدم، عرض الإحصائيات</li>
+                <li><strong>حساب أوقات الصلاة:</strong> استخدام موقعك لحساب أوقات الصلاة بدقة</li>
+                <li><strong>ويجات الشاشة الرئيسية:</strong> عرض أذكارك على الشاشة الرئيسية عبر خدمة خلفية</li>
+                <li><strong>تشغيل الصوت في الخلفية:</strong> تشغيل التلاوات الصوتية عبر خدمة المقدمة (Foreground
+                    Service)</li>
                 <li><strong>المصادقة (اختياري):</strong> التحقق من هويتك إذا أنشأت حساباً</li>
-                <li><strong>معالجة الاشتراكات:</strong> إدارة اشتراكات النسخة المميزة عبر متاجر التطبيقات (Google Play / Apple App Store)</li>
-                <li><strong>عرض الإعلانات (للمستخدمين المجانيين):</strong> عرض إعلانات ذات صلة عبر Google AdMob</li>
-                <li><strong>تحسين التطبيق:</strong> تحليل الاستخدام لتحسين الميزات والأداء</li>
+                <li><strong>معالجة الاشتراكات:</strong> إدارة اشتراكات النسخة المميزة عبر متاجر التطبيقات</li>
+                <li><strong>عرض الإعلانات (للمستخدمين المجانيين):</strong> عرض إعلانات عبر Google AdMob</li>
+                <li><strong>تحسين التطبيق:</strong> تحليل الاستخدام عبر Firebase Analytics</li>
                 <li><strong>إرسال الإشعارات:</strong> تذكيرك بأذكارك اليومية (يمكن تعطيلها)</li>
                 <li><strong>الأمان:</strong> حماية التطبيق والمستخدمين من الاحتيال وسوء الاستخدام</li>
             </ul>
@@ -217,8 +265,14 @@
             <h2>6. خدمات الطرف الثالث</h2>
             <p>يستخدم التطبيق الخدمات التالية، التي لها سياسات خصوصية خاصة بها:</p>
             <ul>
-                <li><strong>Google AdMob:</strong> <a href="https://policies.google.com/privacy" target="_blank">سياسة خصوصية Google</a></li>
-                <li><strong>Google Play Services:</strong> <a href="https://policies.google.com/privacy" target="_blank">سياسة خصوصية Google</a></li>
+                <li><strong>Firebase Analytics:</strong> لجمع إحصائيات الاستخدام المجهولة - <a
+                        href="https://firebase.google.com/support/privacy" target="_blank">سياسة خصوصية Firebase</a>
+                </li>
+                <li><strong>Google AdMob:</strong> لعرض الإعلانات - <a href="https://policies.google.com/privacy"
+                        target="_blank">سياسة خصوصية Google</a></li>
+                <li><strong>Google Play Services:</strong> <a href="https://policies.google.com/privacy"
+                        target="_blank">سياسة خصوصية Google</a></li>
+                <li><strong>Geolocator:</strong> لتحديد الموقع لحساب أوقات الصلاة (محلياً فقط)</li>
             </ul>
 
             <h2>7. خصوصية الأطفال</h2>
@@ -257,53 +311,69 @@
         <!-- English Version -->
         <div class="lang-en">
             <h1>Privacy Policy</h1>
-            <h2 style="text-align: center; color: #666; font-size: 1.2em; margin-top: 5px;">Tathkeer App - Muslim Dhikr & Supplication Tracker</h2>
-            <p class="effective-date">Effective Date: January 9, 2025 | Last Updated: January 9, 2025</p>
+            <h2 style="text-align: center; color: #666; font-size: 1.2em; margin-top: 5px;">Tathkeer App - Muslim Dhikr
+                & Supplication Tracker</h2>
+            <p class="effective-date">Effective Date: January 9, 2025 | Last Updated: January 3, 2026</p>
 
             <h2>Introduction</h2>
             <p>
-                Welcome to <strong>Tathkeer</strong>. We are committed to protecting your privacy and respecting your personal data.
-                This app is designed with a <span class="highlight">"local-first"</span> principle, meaning most of your data stays on your device and is fully encrypted.
+                Welcome to <strong>Tathkeer</strong>. We are committed to protecting your privacy and respecting your
+                personal data.
+                This app is designed with a <span class="highlight">"local-first"</span> principle, meaning most of your
+                data stays on your device and is fully encrypted.
             </p>
             <p>
-                This Privacy Policy explains how we collect, use, and protect your information when you use the Tathkeer app.
+                This Privacy Policy explains how we collect, use, and protect your information when you use the Tathkeer
+                app.
             </p>
 
             <h2>1. Information We Collect</h2>
 
             <h3>1.1 Information You Provide</h3>
             <ul>
-                <li><strong>No Account Needed:</strong> The app does not require creating an account or logging in. All your data is stored locally on your device only.</li>
-                <li><strong>Dhikr & Supplication Content:</strong> All your dhikr, supplications, and statistics are stored locally on your device, encrypted using SQLCipher.</li>
+                <li><strong>No Account Needed:</strong> The app does not require creating an account or logging in. All
+                    your data is stored locally on your device only.</li>
+                <li><strong>Dhikr & Supplication Content:</strong> All your dhikr, supplications, and statistics are
+                    stored locally on your device, encrypted using SQLCipher.</li>
             </ul>
 
             <h3>1.2 Information Collected Automatically</h3>
             <ul>
                 <li><strong>Device Information:</strong> Device type, operating system, app version</li>
                 <li><strong>Usage Data:</strong> App interactions, dhikr used, session duration</li>
-                <li><strong>Analytics Data (Free Users):</strong> Anonymous analytics collected via Google AdMob</li>
+                <li><strong>Analytics Data:</strong> Anonymous analytics collected via <strong>Firebase
+                        Analytics</strong> and Google AdMob</li>
+                <li><strong>Location Data:</strong> When permitted, we collect your location to calculate accurate
+                    prayer times. <span class="highlight">Location is used locally only and never sent to our
+                        servers.</span></li>
             </ul>
 
             <h3>1.3 Biometric Data</h3>
             <p>
                 If you enable biometric app lock, the app uses your device's fingerprint or face recognition.
-                <span class="highlight">We do not store or access this biometric data</span> - processing is entirely handled by your device's operating system.
+                <span class="highlight">We do not store or access this biometric data</span> - processing is entirely
+                handled by your device's operating system.
             </p>
 
             <h2>2. How We Use Your Information</h2>
             <p>We use the information we collect for the following purposes:</p>
             <ul>
                 <li><strong>Provide App Functionality:</strong> Save your dhikr, track progress, display statistics</li>
+                <li><strong>Calculate Prayer Times:</strong> Use your location to calculate accurate prayer times</li>
+                <li><strong>Home Screen Widgets:</strong> Display your dhikr on the home screen via background service
+                </li>
+                <li><strong>Background Audio:</strong> Play audio recitations via Foreground Service</li>
                 <li><strong>Authentication (Optional):</strong> Verify your identity if you create an account</li>
-                <li><strong>Process Subscriptions:</strong> Manage Pro subscriptions via app stores (Google Play / Apple App Store)</li>
-                <li><strong>Display Ads (Free Users):</strong> Show relevant ads via Google AdMob</li>
-                <li><strong>Improve the App:</strong> Analyze usage to improve features and performance</li>
+                <li><strong>Process Subscriptions:</strong> Manage Pro subscriptions via app stores</li>
+                <li><strong>Display Ads (Free Users):</strong> Show ads via Google AdMob</li>
+                <li><strong>Improve the App:</strong> Analyze usage via Firebase Analytics</li>
                 <li><strong>Send Notifications:</strong> Remind you of daily dhikr (can be disabled)</li>
                 <li><strong>Security:</strong> Protect the app and users from fraud and abuse</li>
             </ul>
 
             <h2>3. Information Sharing</h2>
-            <p>We <span class="highlight">do not sell your personal data</span> to third parties. We may share your information with:</p>
+            <p>We <span class="highlight">do not sell your personal data</span> to third parties. We may share your
+                information with:</p>
 
             <h3>3.1 Service Providers</h3>
             <ul>
@@ -353,14 +423,22 @@
             <h2>6. Third-Party Services</h2>
             <p>The app uses the following services, which have their own privacy policies:</p>
             <ul>
-                <li><strong>Google AdMob:</strong> <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
-                <li><strong>Google Play Services:</strong> <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
+                <li><strong>Firebase Analytics:</strong> For collecting anonymous usage statistics - <a
+                        href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Policy</a>
+                </li>
+                <li><strong>Google AdMob:</strong> For displaying ads - <a href="https://policies.google.com/privacy"
+                        target="_blank">Google Privacy Policy</a></li>
+                <li><strong>Google Play Services:</strong> <a href="https://policies.google.com/privacy"
+                        target="_blank">Google Privacy Policy</a></li>
+                <li><strong>Geolocator:</strong> For location detection to calculate prayer times (locally only)</li>
             </ul>
 
             <h2>7. Children's Privacy</h2>
             <p>
-                Tathkeer app is suitable for all ages. We do not knowingly collect personal information from children under 13.
-                If you are a parent or guardian and believe your child has provided us with personal information, please contact us to have it deleted.
+                Tathkeer app is suitable for all ages. We do not knowingly collect personal information from children
+                under 13.
+                If you are a parent or guardian and believe your child has provided us with personal information, please
+                contact us to have it deleted.
             </p>
 
             <h2>8. Changes to Privacy Policy</h2>
@@ -404,4 +482,5 @@
         setLanguage(savedLang);
     </script>
 </body>
+
 </html>
